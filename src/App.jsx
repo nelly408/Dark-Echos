@@ -1,5 +1,16 @@
 //import statements
-export default function App() {
-  // vvariables and javascript logic
-  //return(JSX and Javascript)
+import {episodeList} from "./data";
+import Episode from "./OneEpisode"
+
+function App() {
+
+    return(
+    <div>
+    {episodeList.map(episodeList=> <p>{episodeList.title}<br></br>{episodeList.description}</p>)}
+    </div>
+
+  )
 }
+
+
+export default App
